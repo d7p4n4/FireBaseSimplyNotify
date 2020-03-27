@@ -28,6 +28,10 @@ exports.sendNotifications = functions.database.ref('/notifications/{notification
   }
 
     console.info(payload);
+  
+    function deleteNotificationsWithDelay(NOTIFICATION_SNAPSHOT) {
+        setTimeout(admin.database().ref("/notifications").child(NOTIFICATION_SNAPSHOT.key).remove(), 10000);
+    }
 
     function cleanInvalidTokens(tokensWithKey, results) {
         const invalidTokens = [];
@@ -67,7 +71,6 @@ exports.sendNotifications = functions.database.ref('/notifications/{notification
 
         return admin.messaging().sendToDevice(tokens, payload)
             .then((response) => cleanInvalidTokens(tokensWithKey, response.results))
-        /*    .then(() => admin.database().ref('/notifications').child(NOTIFICATION_SNAPSHOT.key).remove() )
-            */
+            .then(() => deleteNotificationsWithDelay(NOTIFICATION_SNAPSHOT))
     });
 });
