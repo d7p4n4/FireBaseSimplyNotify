@@ -1,0 +1,59 @@
+[debug] [2020-03-26T15:21:16.267Z] ----------------------------------------------------------------------
+[debug] [2020-03-26T15:21:16.269Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Zsomi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2020-03-26T15:21:16.269Z] CLI Version:   7.16.0
+[debug] [2020-03-26T15:21:16.269Z] Platform:      win32
+[debug] [2020-03-26T15:21:16.269Z] Node Version:  v12.16.1
+[debug] [2020-03-26T15:21:16.271Z] Time:          Thu Mar 26 2020 16:21:16 GMT+0100 (GMT+01:00)
+[debug] [2020-03-26T15:21:16.271Z] ----------------------------------------------------------------------
+[debug] [2020-03-26T15:21:16.271Z] 
+[debug] [2020-03-26T15:21:16.280Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-26T15:21:16.281Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions, database, hosting
+[debug] [2020-03-26T15:21:18.316Z] [hub] writing locator at C:\Users\Zsomi\AppData\Local\Temp\hub-simplynotify-fd89f.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[debug] [2020-03-26T15:21:22.386Z] Ignoring unsupported arg: projectId
+[debug] [2020-03-26T15:21:22.386Z] Ignoring unsupported arg: auto_download
+[debug] [2020-03-26T15:21:22.386Z] Ignoring unsupported arg: rules
+[debug] [2020-03-26T15:21:22.386Z] Starting database emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\Zsomi\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.4.1.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false}
+[info] i  database: database emulator logging to database-debug.log
+[debug] [2020-03-26T15:21:24.543Z] 16:21:24.541 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+
+[debug] [2020-03-26T15:21:24.701Z] 16:21:24.701 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+
+[info] +  database: database emulator started at http://localhost:9000
+[info] i  database: For testing set FIREBASE_DATABASE_EMULATOR_HOST=localhost:9000
+[debug] [2020-03-26T15:21:27.686Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/simplynotify-fd89f/webApps/-/config  
+ 
+[debug] [2020-03-26T15:21:28.979Z] <<< HTTP RESPONSE 200
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  hosting: hosting emulator started at http://localhost:5000
+[info] i  functions: Watching "D:\Server\Firebase\simply-notify\functions" for Cloud Functions...
+[debug] [2020-03-26T15:21:29.076Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T15:21:29.076Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-26T15:21:29.076Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T15:21:29.076Z] [worker-~diagnostic~-3d0a51dc-4b19-4d49-9891-685ab59fcb7f]: Assigning socketPath: \\?\pipe\D:\Server\Firebase\simply-notify\functions\20648
+[debug] [2020-03-26T15:21:29.076Z] [worker-~diagnostic~-3d0a51dc-4b19-4d49-9891-685ab59fcb7f]: BUSY
+[debug] [2020-03-26T15:21:29.748Z] [runtime-status] [20648] Functions runtime initialized. {"cwd":"D:\\Server\\Firebase\\simply-notify\\functions","node_version":"12.16.1"}
+[debug] [2020-03-26T15:21:29.748Z] [runtime-status] [20648] Disabled runtime features: undefined
+[debug] [2020-03-26T15:21:29.754Z] [runtime-status] [20648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Server\\Firebase\\simply-notify\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-26T15:21:29.757Z] [runtime-status] [20648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Server\\Firebase\\simply-notify\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-26T15:21:30.228Z] [runtime-status] [20648] Found google-gax at D:\Server\Firebase\simply-notify\functions\node_modules\google-gax\build\src\index.js
+[debug] [2020-03-26T15:21:30.229Z] [runtime-status] [20648] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-03-26T15:21:30.296Z] [runtime-status] [20648] Checked functions.config() {"config":{}}
+[debug] [2020-03-26T15:21:30.297Z] [runtime-status] [20648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Server\\Firebase\\simply-notify\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-26T15:21:30.301Z] [runtime-status] [20648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Server\\Firebase\\simply-notify\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-26T15:21:30.302Z] [runtime-status] [20648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Server\\Firebase\\simply-notify\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-26T15:21:30.412Z] [runtime-status] [20648] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Server\\Firebase\\simply-notify\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-03-26T15:21:30.414Z] [runtime-status] [20648] config() parent accessed! {"parentKey":"firebase","parentConfig":{}}
+[debug] [2020-03-26T15:21:30.414Z] [runtime-status] [20648] initializeApp(DEFAULT) {"databaseURL":"https://simplynotify-fd89f.firebaseio.com","storageBucket":"simplynotify-fd89f.appspot.com","projectId":"simplynotify-fd89f"}
+[debug] [2020-03-26T15:21:30.498Z] addDatabaseTrigger "{\"name\":\"projects/simplynotify-fd89f/locations/_/functions/sendNotifications\",\"path\":\"/notifications/{notificationId}\",\"event\":\"providers/google.firebase.database/eventTypes/ref.write\",\"topic\":\"projects/simplynotify-fd89f/topics/sendNotifications\"}"
+[debug] [2020-03-26T15:21:30.499Z] >>> HTTP REQUEST POST http://localhost:9000/.settings/functionTriggers.json?ns=simplynotify-fd89f  
+ {"name":"projects/simplynotify-fd89f/locations/_/functions/sendNotifications","path":"/notifications/{notificationId}","event":"providers/google.firebase.database/eventTypes/ref.write","topic":"projects/simplynotify-fd89f/topics/sendNotifications"}
+[debug] [2020-03-26T15:21:30.500Z] [worker-~diagnostic~-3d0a51dc-4b19-4d49-9891-685ab59fcb7f]: IDLE
+[debug] [2020-03-26T15:21:30.927Z] <<< HTTP RESPONSE 200
+[info] +  functions[sendNotifications]: database function initialized.
+[info] +  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-03-26T20:17:31.880Z] [worker-~diagnostic~-3d0a51dc-4b19-4d49-9891-685ab59fcb7f]: exited
+[debug] [2020-03-26T20:17:31.887Z] [worker-~diagnostic~-3d0a51dc-4b19-4d49-9891-685ab59fcb7f]: FINISHED
