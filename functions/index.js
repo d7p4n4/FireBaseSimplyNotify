@@ -67,7 +67,7 @@ exports.sendNotifications = functions.database.ref('/notifications/{notification
 
         return admin.messaging().sendToDevice(tokens, payload)
             .then((response) => cleanInvalidTokens(tokensWithKey, response.results))
-            .then(() => admin.database().ref('/notifications').child(NOTIFICATION_SNAPSHOT.key).remove() )
-            
+        /*    .then(() => admin.database().ref('/notifications').child(NOTIFICATION_SNAPSHOT.key).remove() )
+            */
     });
 });
